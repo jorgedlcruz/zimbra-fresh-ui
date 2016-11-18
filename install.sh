@@ -1,13 +1,16 @@
 #!/bin/bash
 ## Backup of the files, in case something goes wrong
-tar -zcvf skins.tar.gz /opt/zimbra/jetty/webapps/zimbra/skins
-tar -zcvf css.tar.gz /opt/zimbra/jetty/webapps/zimbra/css
+echo "Creating a Backup of the _base3 and css folders"
+tar -zcf skins.tar.gz /opt/zimbra/jetty/webapps/zimbra/skins
+tar -zcf css.tar.gz /opt/zimbra/jetty/webapps/zimbra/css
 
 ## Rsync of the new files into the actual folders
+echo "Doing a rsync of the new files into the Zimbra folders"
 rsync -a skins/ /opt/zimbra/jetty/webapps/zimbra/skins/
 rsync -a css/ /opt/zimbra/jetty/webapps/zimbra/css/
 
 ## Mailboxd restart, it can take some time
+echo "Restarting the Mailboxd"
 su - zimbra -c 'zmmailboxdctl restart'
 
 ## Browser reload
