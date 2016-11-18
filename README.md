@@ -21,6 +21,7 @@ cd zimbra-fresh-ui
 chmod +x install.sh
 ./install.sh
 ```
+Remember to keep safe the files css.tar.gz and skins.tar.gz in case you need to rollback
 
 Return then to your Browser and pres F5, or refresh your Browser
 
