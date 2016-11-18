@@ -1,5 +1,7 @@
 # Zimbra Fresh UI
-In this Repository you will find how to download and change some minor files in order to add a fresh aspect to your Zimbra Inbox
+In this Repository you will find how to download and change some minor files in order to add a fresh aspect to your Zimbra Inbox.
+Supported for ZCS 8.6.0 and 8.7.x
+
 ![alt tag](https://github.com/jorgedlcruz/zimbra-fresh-ui/raw/master/zimbra-fresh-ui.png)
 
 # Instructions
