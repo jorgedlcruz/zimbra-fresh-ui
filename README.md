@@ -1,6 +1,6 @@
 # Zimbra Fresh UI
 In this Repository you will find how to download and change some minor files in order to add a fresh aspect to your Zimbra Inbox.
-Supported for ZCS 8.6.0 and 8.7.x
+Supported for ZCS 8.6.0 and 8.7 (does not work on 8.7.1)
 
 ![alt tag](https://github.com/jorgedlcruz/zimbra-fresh-ui/raw/master/zimbra-fresh-ui.png)
 
@@ -24,7 +24,15 @@ chmod +x install.sh
 
 Return then to your Browser and pres F5, or refresh your Browser
 
+## Make a backup before running installer again
+Copy paste css.tar.gz and skins.tar.gz and keep them in a separate folder for backup.
 
+## Uninstall
+    tar -xvf css.tar.gz
+    tar -xvf skins.tar.gz
+    /bin/cp -rfaxv opt/zimbra/jetty/webapps/zimbra/* /opt/zimbra/jetty/webapps/zimbra/
+    su zimbra
+    zmmailboxdctl restart
 
 ========================================================================
 ### License
