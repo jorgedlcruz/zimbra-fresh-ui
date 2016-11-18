@@ -13,14 +13,14 @@ fi
 echo "Doing a rsync of the new files into the Zimbra folders"
 rsync -a skins/ /opt/zimbra/jetty/webapps/zimbra/skins/
 
-echo "Are you running ZCS 8.7.1?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) rsync -a 8.7.1/css/ /opt/zimbra/jetty/webapps/zimbra/css/;;
-        No ) rsync -a 8.6/8.7/css/ /opt/zimbra/jetty/webapps/zimbra/css/;;
-    esac
-done
-
+echo -n "Are you running ZCS 8.7.1? Select y/n"
+old_stty_cfg=$(stty -g)
+stty raw -echo ; answer=$(head -c 1) ; stty $old_stty_cfg # Care playing with stty
+if echo "$answer" | grep -iq "^y" ;then
+    echo rsync -a 8.7.1/css/ /opt/zimbra/jetty/webapps/zimbra/css/
+else
+    echo rsync -a 8.6:8.7/css/ /opt/zimbra/jetty/webapps/zimbra/css/
+fi
 
 ## Mailboxd restart, it can take some time
 echo "Restarting the Mailboxd"
