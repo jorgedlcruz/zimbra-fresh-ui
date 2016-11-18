@@ -24,7 +24,14 @@ chmod +x install.sh
 
 Return then to your Browser and pres F5, or refresh your Browser
 
+# Uninstall instructions
+In case that you need to rollback, please follow the next instructions:
 
+```bash
+tar -xvf css.tar.gz
+tar -xvf skins.tar.gz
+/bin/cp -rfaxv opt/zimbra/jetty/webapps/zimbra/* /opt/zimbra/jetty/webapps/zimbra/
+```
 
 ========================================================================
 ### License
