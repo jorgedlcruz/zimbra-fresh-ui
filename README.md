@@ -37,6 +37,10 @@ tar -xvf skins.tar.gz
 su - zimbra -c 'zmmailboxdctl restart'
 ```
 
+## ToDo
+- [ ] Add the skin_container_username back again, but with an image icon instead the name
+- Can use the next image for example img/zimbra/ImgAccounts.png, when people mouseover the quota and the name will appear
+
 ========================================================================
 ### License
 The MIT License
