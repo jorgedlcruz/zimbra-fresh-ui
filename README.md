@@ -1,6 +1,6 @@
 # Zimbra Fresh UI
 In this Repository you will find how to download and change some minor files in order to add a fresh aspect to your Zimbra Inbox.
-Supported for ZCS 8.6 and 8.7, it's compatible with 8.7.1 as well, you will need to asnwer the question if you are using 8.7.1
+Supported for ZCS 8.6 and 8.7, it's compatible with 8.7.1 as well, you will need to answer the question if you are using 8.7.1
 
 ![alt tag](https://github.com/jorgedlcruz/zimbra-fresh-ui/raw/master/zimbra-fresh-ui.png)
 
