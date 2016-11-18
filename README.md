@@ -1,6 +1,6 @@
 # Zimbra Fresh UI
 In this Repository you will find how to download and change some minor files in order to add a fresh aspect to your Zimbra Inbox.
-Supported for ZCS 8.6.0 and 8.7.x
+Supported for ZCS 8.6 and 8.7, it's not compatible with 8.7.1 at the moment
 
 ![alt tag](https://github.com/jorgedlcruz/zimbra-fresh-ui/raw/master/zimbra-fresh-ui.png)
 
@@ -31,6 +31,7 @@ In case that you need to rollback, please follow the next instructions:
 tar -xvf css.tar.gz
 tar -xvf skins.tar.gz
 /bin/cp -rfaxv opt/zimbra/jetty/webapps/zimbra/* /opt/zimbra/jetty/webapps/zimbra/
+su - zimbra -c 'zmmailboxdctl restart'
 ```
 
 ========================================================================
