@@ -25,7 +25,7 @@ The installer will ask if you have 8.7.1, type y if you have it or n if you have
 
 Remember to keep safe the files css.tar.gz and skins.tar.gz in case you need to rollback
 
-Return then to your Browser and pres F5, or refresh your Browser
+Return then to your Browser and press F5, or refresh your Browser
 
 # Uninstall instructions
 In case that you need to rollback, please follow the next instructions:
